@@ -15,7 +15,11 @@ def summarize_adoptions(adoptions):
     # TODO Step 6: Implement the algorithm in Python using a suitable data structure.
     # TODO Step 7: Test your function with small examples and fix bugs.
     # TODO Step 8: Check the time and space complexity of your final solution.
-    pass
+    # Use a dictionary to count occurrences of each animal string.
+    counts = {}
+    for animal in adoptions:
+        counts[animal] = counts.get(animal, 0) + 1
+    return counts
 
 
 if __name__ == "__main__":
